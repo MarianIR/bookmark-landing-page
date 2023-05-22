@@ -22,7 +22,6 @@
   .page-logo {
     width: 14rem;
     height: 2.4rem;
-    margin-left: 6vw;
     &.active {
       width: 14rem;
       height: 2.4rem;
@@ -32,6 +31,7 @@
         width: 14rem;
         height: 2.4rem;
         filter: brightness(1) invert(0);
+        margin-left: 6vw;
       }
     }
   }

@@ -1,0 +1,78 @@
+.download-extension-section {
+  width: 100%;
+  margin: 0 auto;
+
+  .extension-article {
+    @include Article;
+    margin: 0 auto;
+    padding: 1rem;
+    @media (min-width: 1024px) {
+    }
+    .download-heading {
+      @include secondaryHeading;
+    }
+    .paragraph {
+      @include Paragraph;
+    }
+  }
+  .add-container {
+    width: 100%;
+    max-width: 30rem;
+    padding: 1rem;
+    margin: 0 auto;
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 100rem;
+    }
+    .add-extension {
+      width: 100%;
+      text-align: center;
+      margin: 2rem auto;
+      background-color: #fdfdfd;
+      box-shadow: 0px 6px 11px -4px #c2d5ff;
+      border-radius: 0.5rem;
+      @media (min-width: 1024px) {
+        margin: 2rem;
+        &:nth-child(2) {
+          margin-top: 8rem;
+        }
+        &:last-child {
+          margin-top: 16rem;
+        }
+      }
+      .extension-logo {
+        margin: 3rem;
+        width: 10rem;
+        height: 10rem;
+      }
+      .add-heading {
+        @include secondaryHeading;
+      }
+      .paragraph {
+        @include Paragraph;
+      }
+      .dots-image {
+        width: 100%;
+      }
+      .add-install-btn {
+        margin: 2rem auto;
+        border: 0.2rem solid transparent;
+        background-color: $primaryColor1;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fdfdfd;
+        &:hover {
+          cursor: pointer;
+          border: 0.2rem solid $primaryColor1;
+          background-color: #fdfdfd;
+          color: $primaryColor1;
+          transition: 0.4s;
+        }
+      }
+    }
+  }
+}

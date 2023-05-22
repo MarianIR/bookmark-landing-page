@@ -1,0 +1,86 @@
+.stay-up-section {
+  width: 100%;
+  background-color: $primaryColor1;
+  text-align: center;
+  padding: 2rem;
+  @media (min-width: 1024px) {
+  }
+  .joined-persons {
+    @include Paragraph;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: #fdfdfd;
+    @media (min-width: 1024px) {
+    }
+  }
+  .stay-up-heading {
+    @include secondaryHeading;
+    color: #fdfdfd;
+  }
+  .email-form {
+    width: 100%;
+    max-width: 30rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      max-width: 60rem;
+    }
+    .email-container {
+      width: 100%;
+      @media (min-width: 1024px) {
+      }
+      .email-input {
+        width: 100%;
+        padding: 1.5rem;
+        border-radius: 0.6rem;
+        border: none;
+        margin-top: 5rem;
+        @media (min-width: 1024px) {
+          width: 90%;
+        }
+      }
+      .error-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        position: absolute;
+        margin: 6rem 12rem 0 -4rem;
+        display: none;
+        @media (min-width: 1024px) {
+        }
+      }
+      .error-message {
+        width: 103%;
+        background-color: $primaryColor2;
+        border-radius: 0.5rem;
+        font-style: italic;
+        color: #fdfdfd;
+        padding: 5rem 0 0.5rem 1rem;
+        margin: -4.5rem auto 1rem auto;
+        text-align: left;
+        display: none;
+        @media (min-width: 1024px) {
+          padding: 1.5rem;
+        }
+      }
+    }
+    .contact-us-btn {
+      width: 100%;
+      background-color: $primaryColor2;
+      color: #fdfdfd;
+      font-weight: bold;
+      font-size: 1.6rem;
+      border: none;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      @media (min-width: 1024px) {
+        padding: 1.5rem;
+        width: 40%;
+      }
+    }
+  }
+}

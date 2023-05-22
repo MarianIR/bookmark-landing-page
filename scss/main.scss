@@ -1,0 +1,24 @@
+@import "variables", "reset", "mixin", "header", "hero", "features", "faq",
+  "footer", "extension", "stayUp";
+
+body {
+}
+.show-text .answer {
+  display: none;
+  font-size: 0.765rem;
+  line-height: 1.7;
+  padding-block-end: 1rem;
+}
+
+.show-text .arrow {
+  transform: rotate(180deg);
+}
+
+.show-text .question {
+  font-weight: 700;
+  color: var(--clr-primary-blue);
+}
+
+.show-text .question::after {
+  display: none;
+}
